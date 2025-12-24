@@ -36,7 +36,7 @@ nombre_señal.connect(nombre_de_la_funcion)
 
 # Formas de guardar un nodo para usar sus funciones
 ~~~~gdscript
- player = get_tree().get_first_node_in_group("player")
+player = get_tree().get_first_node_in_group("player")
 #usado cuando el jugador está instanciado en la escena Y NO HAY MÁS DE UN JUGADOR
 ~~~~
 
