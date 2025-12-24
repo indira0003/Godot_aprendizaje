@@ -46,6 +46,6 @@ nombre_señal.connect(nombre_de_la_funcion)
 
 ~~~~gdscript
 if area.is_in_group("player"):
-	jugador_cerca = area.get_parent
+	jugador_cerca = area.get_parent()
 #guardamos al padre del area
 ~~~~
