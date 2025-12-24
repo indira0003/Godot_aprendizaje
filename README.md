@@ -37,4 +37,15 @@ nombre_señal.connect(nombre_de_la_funcion)
 # Formas de guardar un nodo para usar sus funciones
 ~~~~gdscript
  player = get_tree().get_first_node_in_group("player")
+#usado cuando el jugador está instanciado en la escena Y NO HAY MÁS DE UN JUGADOR
+~~~~
+
+>[!IMPORTANT]
+>- Asegurar que está en el GRUPO que se menciona
+>- Asegurar que tildaste la palomita en la escena del objeto, no en el mapa(que son diferentes)
+
+~~~~gdscript
+if area.is_in_group("player"):
+	jugador_cerca = area.get_parent
+#guardamos al padre del area
 ~~~~
