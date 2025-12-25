@@ -49,3 +49,12 @@ if area.is_in_group("player"):
 	jugador_cerca = area.get_parent()
 #guardamos al padre del area
 ~~~~
+
+# movimiento del jugador
+~~~~gdscript
+Input.get_axis
+~~~~
+
+~~~~gdscript
+Input.get_vector
+~~~~
