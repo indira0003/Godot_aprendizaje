@@ -58,3 +58,18 @@ Input.get_axis
 ~~~~gdscript
 Input.get_vector
 ~~~~
+
+# Vectores
+### direción:
+la direción a la que apunta un vector
+
+### magnitud: 
+1. En Velocidad: La magnitud es la "rapidez" (ej. 100 km/h).
+2. En Fuerza: La magnitud es la intensidad de la fuerza (ej. 50 Newtons).
+3. En Desplazamiento: La magnitud es la distancia en línea recta entre dos puntos.
+
+### normalizar un vector
+hacer mas pequeña su longitud y sea la misma que las demás (con magnitud 1 y positivo)
+
+### Vector normal: 
+Un vector normal a un plano, es aquel que es perpendicular a dicho plano
