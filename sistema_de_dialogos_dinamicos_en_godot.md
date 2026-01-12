@@ -1,4 +1,22 @@
 # Sistema de diálogos dinámicos en Godot
+Leer https://github.com/nathanhoad/godot_dialogue_manager para reforzar este sistema
+
+Tipo de dialogo para este sistema:
+World-bound dialogue
+
+(diálogo ligado al mundo)
+
+- El texto pertenece al espacio del juego
+
+- Puede haber movimiento
+
+- Puede haber cámara libre
+
+- El diálogo convive con el gameplay
+
+- NO ES DIALOGOS VISUAL NOVEL
+
+---
 
 > Documento pensado para **GitHub**, para que **yo del futuro** y **una IA** puedan entender rápidamente qué se hizo, por qué funciona y cómo reutilizarlo sin volver al infierno.
 
@@ -176,6 +194,24 @@ Solo mover el globo cuando llega una línea nueva.
 - `_process()` → mover el globo **cada frame mientras el diálogo esté activo**
 
 ---
+
+## 🗣️ Estado del hablante (patrón usado)
+
+El personaje que está hablando NO se mueve directamente
+cuando llega una línea nueva.
+
+Patrón usado:
+- `_cuando_haya_una_nueva_linea_de_dialogo_nueva(linea)` solo decide QUIÉN habla
+- El personaje actual se guarda en una variable
+- `_process()` usa ese estado para mover el globo cada frame
+
+Esto permite que:
+- el personaje se mueva
+- la cámara se mueva
+- el globo siga correctamente
+
+---
+
 
 ## 🧱 UI – por qué no mover todo “a ojo”
 
