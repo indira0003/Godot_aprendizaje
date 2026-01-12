@@ -1,4 +1,4 @@
-# 🧠 Lienzo técnico – Sistema de diálogos dinámicos en Godot
+# Sistema de diálogos dinámicos en Godot
 
 > Documento pensado para **GitHub**, para que **yo del futuro** y **una IA** puedan entender rápidamente qué se hizo, por qué funciona y cómo reutilizarlo sin volver al infierno.
 
